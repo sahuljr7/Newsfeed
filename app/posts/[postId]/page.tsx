@@ -66,9 +66,10 @@ export default async function Post({ params }: { params: { postId: string } }) {
               <div className="flex flex-row flex-wrap justify-center select-none">
                 {keywords.map((keyword, index) => (
                   <span
-                    key={index}
-                    className="p-1 text-sm font-thin text-center rounded-full w-fit h-fit"
-                  >
+                  key={index}
+                  className="p-1 text-sm font-thin text-center rounded-full w-fit h-fit"
+                  style={{ color: 'green', fontWeight: 'bold' }}
+              >
                     {keyword}
                   </span>
                 ))}
